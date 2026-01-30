@@ -17,6 +17,9 @@ export const TECHNOLOGIES: Record<string, Technology> = {
   graphics: { name: 'グラフィックス', color: 'bg-teal-600 text-white' },
   multimedia: { name: 'マルチメディア', color: 'bg-violet-600 text-white' },
   gamelogic: { name: 'ゲームロジック', color: 'bg-emerald-600 text-white' },
+  c: { name: 'C', color: 'bg-gray-600 text-white' },
+  openmp: { name: 'OpenMP', color: 'bg-fuchsia-600 text-white' },
+  numerical: { name: '数値計算', color: 'bg-emerald-500 text-white' },
   uiux: { name: 'UI/UX', color: 'bg-sky-600 text-white' },
 };
 
@@ -184,6 +187,44 @@ export const PROJECTS: Project[] = [
     lessonsLearned: '大規模プロジェクトの管理と、マルチメディア制作を含む総合的なゲーム開発経験を獲得',
     youtubeVideoId: '', // YouTube アップロード後に設定
     screenshots: [],
+    githubUrl: '',
+  },
+  {
+    id: 'pi',
+    title: '高精度円周率計算プログラム',
+    titleEn: 'High-Precision Pi Calculator',
+    shortDescription: '授業課題を拡張し、Cで独自の多倍長整数演算とOpenMP並列化を実装して4000桁以上を計算',
+    thumbnail: '/images/projects/pi-screenshot.svg',
+    technologies: [
+      TECHNOLOGIES.c,
+      TECHNOLOGIES.openmp,
+      TECHNOLOGIES.numerical,
+    ],
+    status: 'completed',
+    type: 'video',
+    fullDescription: `
+      高専の授業課題（Adamchik-Wagon公式で円周率1000桁）を拡張し、C言語で多倍長整数演算ライブラリを自作して
+      4000桁以上のπを計算しました。OpenMPによる並列化を行い、性能改善にも取り組みました。
+    `,
+    developmentBackground: `
+      授業の指定は「1変数1桁の実装」でしたが、効率と拡張性を求めて32ビット単位の多倍長表現と基数変換を実装しました。
+      数値アルゴリズムの実装と並列化の実験が主な目的です。
+    `,
+    teamSize: '1人（授業課題の拡張）',
+    developmentPeriod: '高専3年（授業プロジェクト）',
+    challenges: [
+      '多倍長整数の正確なキャリー/ボロー処理の実装',
+      '2進数↔10進数の基数変換とその性能',
+      '計算精度と並列化の両立',
+    ],
+    solutions: [
+      '32ビット配列に基づく効率的なキャリー処理の実装',
+      '段階的な基数変換処理の実装・検証',
+      'OpenMP を用いた並列処理と結果検証',
+    ],
+    lessonsLearned: 'FFTなしの限界を体感し、高精度計算には高速乗算アルゴリズムの重要性を理解しました。',
+    youtubeVideoId: '', // 後でデモ動画をアップロードして設定
+    screenshots: ['/images/projects/pi-screenshot.svg'],
     githubUrl: '',
   },
 ];
