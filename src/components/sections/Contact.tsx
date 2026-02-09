@@ -29,10 +29,10 @@ export default function Contact() {
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">メール</h3>
               <a
-                href="mailto:contact@example.com"
+                href="mailto:kaedeshirazome.0th.ssk@gmail.com"
                 className="text-purple-400 hover:text-purple-300 transition-colors"
               >
-                contact@example.com
+                kaedeshirazome.0th.ssk@gmail.com
               </a>
               <p className="text-gray-500 text-sm mt-1">
                 ※ メールアドレスは後で更新してください

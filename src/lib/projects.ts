@@ -126,12 +126,13 @@ export const PROJECTS: Project[] = [
       プレイヤーの顔の表情や声色をリアルタイムで解析し、推測された感情に応じて
       キャラクターの動きや攻撃が変化するアクションゲームです。
       研究プロジェクトとして開発中。
+      AIがさらに進化する未来も見据え、製作に積極的にAIを用いて効率化をどのように進めるかも同時に研究しています。
     `,
     developmentBackground: `
-      マルチモーダル入力（視覚・聴覚）を活用したゲーム操作システムの研究として開発。
+      マルチモーダル入力（画像・音声）を活用したゲーム操作システムの研究として開発。
       感情認識技術とゲームプレイの融合による新しいゲーム体験の創出を目指しています。
     `,
-    teamSize: '1人（研究開発）',
+    teamSize: '2人（研究開発） もう一人は音声感情認識モデル担当 自分はそれ以外のすべて',
     developmentPeriod: '開発中（操作システム調整中）',
     challenges: [
       '感情認識の精度向上',
@@ -144,7 +145,7 @@ export const PROJECTS: Project[] = [
       '処理の並列化と最適化',
     ],
     lessonsLearned: '異なる技術スタック（Python・C++・C#）の統合と、リアルタイム処理の難しさを実感',
-    youtubeVideoId: '', // YouTube アップロード後に設定
+    youtubeVideoId: 'https://youtu.be/VnsfBGetYkU', // YouTube アップロード後に設定
     screenshots: [],
     githubUrl: '',
   },
@@ -176,7 +177,7 @@ export const PROJECTS: Project[] = [
     developmentPeriod: 'プログラム完成済み（ステージ・音楽制作中）',
     challenges: [
       '大量の弾幕オブジェクトの効率的な管理',
-      'モダン C++ と従来 C スタイルの混在',
+      '高専4年以降のモダン C++ と以前の従来 C スタイルの混在から成長が見える',
       'マルチメディアコンテンツの自作',
     ],
     solutions: [
@@ -225,7 +226,7 @@ export const PROJECTS: Project[] = [
     lessonsLearned: 'FFTなしの限界を体感し、高精度計算には高速乗算アルゴリズムの重要性を理解しました。',
     youtubeVideoId: '', // 後でデモ動画をアップロードして設定
     screenshots: ['/images/projects/pi-screenshot.svg'],
-    githubUrl: '',
+    githubUrl: 'https://github.com/LotusLover/algo_py',
   },
 ];
 
@@ -243,6 +244,6 @@ export const SOCIAL_LINKS: SocialLink[] = [
 export const SITE_CONFIG = {
   title: 'Kaede Shirazome Portfolio',
   description: 'ゲームプログラマーのポートフォリオサイト',
-  author: '枫白雪',
+  author: 'Kaede Shirazome',
   url: 'https://kaede-shirazome-portal.vercel.app', // Vercel デプロイ後に更新
 };
