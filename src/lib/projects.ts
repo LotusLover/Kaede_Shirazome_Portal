@@ -145,7 +145,7 @@ export const PROJECTS: Project[] = [
       '処理の並列化と最適化',
     ],
     lessonsLearned: '異なる技術スタック（Python・C++・C#）の統合と、リアルタイム処理の難しさを実感',
-    youtubeVideoId: 'https://youtu.be/VnsfBGetYkU', // YouTube アップロード後に設定
+    youtubeVideoId: 'VnsfBGetYkU', // YouTube アップロード後に設定
     screenshots: [],
     githubUrl: '',
   },
