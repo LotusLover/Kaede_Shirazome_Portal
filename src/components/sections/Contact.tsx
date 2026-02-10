@@ -35,7 +35,6 @@ export default function Contact() {
                 kaedeshirazome.0th.ssk@gmail.com
               </a>
               <p className="text-gray-500 text-sm mt-1">
-                ※ メールアドレスは後で更新してください
               </p>
             </div>
 
