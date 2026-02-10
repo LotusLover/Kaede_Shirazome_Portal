@@ -154,7 +154,7 @@ export const PROJECTS: Project[] = [
     title: '夢幻暁紅談',
     titleEn: 'The Eastean Sun In Phantasy Stars',
     shortDescription: '完全自作の弾幕シューティング。立ち絵・背景・音楽・シナリオも自作',
-    thumbnail: '/images/projects/shooting-screenshot.png',
+    thumbnail: '/images/projects/SS_gyoukoudan5.png',
     technologies: [
       TECHNOLOGIES.cpp,
       TECHNOLOGIES.dxlib,
@@ -186,8 +186,8 @@ export const PROJECTS: Project[] = [
       'フリーツールと自作ツールの組み合わせ',
     ],
     lessonsLearned: '大規模プロジェクトの管理と、マルチメディア制作を含む総合的なゲーム開発経験を獲得',
-    youtubeVideoId: '', // YouTube アップロード後に設定
-    screenshots: [],
+    youtubeVideoId: 'Kgr82Xwmqvk', // YouTube アップロード後に設定
+    screenshots: ['/images/projects/SS_gyoukoudan5.png'],
     githubUrl: '',
   },
   {
@@ -195,7 +195,7 @@ export const PROJECTS: Project[] = [
     title: '高精度円周率計算プログラム',
     titleEn: 'High-Precision Pi Calculator',
     shortDescription: '授業課題を拡張し、Cで独自の多倍長整数演算とOpenMP並列化を実装して4000桁以上を計算',
-    thumbnail: '/images/projects/Thumbnail_Py.png',
+    thumbnail: '/images/projects/Thumbnail_Pi.png',
     technologies: [
       TECHNOLOGIES.c,
       TECHNOLOGIES.openmp,
@@ -226,7 +226,7 @@ export const PROJECTS: Project[] = [
     ],
     lessonsLearned: 'FFTなしの限界を体感し、高精度計算には高速乗算アルゴリズムの重要性を理解しました。',
     youtubeVideoId: '', // 後でデモ動画をアップロードして設定
-    screenshots: ['/images/projects/Thumbnail_Py.png'],
+    screenshots: ['/images/projects/Thumbnail_Pi.png'],
     githubUrl: 'https://github.com/LotusLover/algo_py',
   },
 ];
