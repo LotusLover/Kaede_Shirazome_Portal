@@ -102,9 +102,9 @@ export const PROJECTS: Project[] = [
       'プレイテストを通じた継続的な調整',
     ],
     lessonsLearned: 'ネットワーク同期の複雑さと、それに対する様々なアプローチを学習中',
-    gameEmbedUrl: '/games/rts/index.html',
+    gameEmbedUrl: 'https://lotuslover.github.io/brouzer_simu_game_site/',
     screenshots: ['/images/projects/Sumbnail_RTS.png'],
-    githubUrl: '',
+    githubUrl: 'https://github.com/LotusLover/brouzer_simu_game_site',
   },
   {
     id: 'action',
