@@ -116,25 +116,22 @@ export default async function ProjectPage({ params }: PageProps) {
             <div className="bg-gray-800 rounded-xl overflow-hidden border border-gray-700">
               <div className="bg-gray-900 px-4 py-3 border-b border-gray-700 flex items-center justify-between">
                 <span className="text-white font-medium">🎮 ゲームをプレイ</span>
-                <span className="text-gray-400 text-sm">
-                  ※ WebGL ビルド配置後に表示されます
-                </span>
+                <a 
+                  href={project.gameEmbedUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-400 hover:text-purple-300 text-sm"
+                >
+                  新しいタブで開く ↗
+                </a>
               </div>
-              <div className="aspect-video bg-gray-900 flex items-center justify-center">
-                {/* Unity WebGL ビルド配置後にコメントを解除 */}
-                {/* <iframe
+              <div className="aspect-video bg-gray-900">
+                <iframe
                   src={project.gameEmbedUrl}
                   className="w-full h-full"
                   allowFullScreen
-                /> */}
-                <div className="text-center text-gray-500 p-8">
-                  <svg className="w-16 h-16 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <p className="text-lg mb-2">ゲーム準備中</p>
-                  <p className="text-sm">Unity WebGL ビルドを配置すると、ここでプレイできるようになります</p>
-                </div>
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                />
               </div>
             </div>
           ) : project.type === 'video' ? (
