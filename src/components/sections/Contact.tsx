@@ -73,7 +73,7 @@ export default function Contact() {
 
           {/* 追加メッセージ */}
           <p className="text-gray-500 text-sm mt-8">
-            ゲーム開発のお仕事、共同開発のご相談など、お待ちしております。
+            ゲーム開発のお仕事、共同開発のご相談など、お待ちしております。SEGAいきたい
           </p>
         </div>
       </div>

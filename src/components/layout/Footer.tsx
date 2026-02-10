@@ -14,7 +14,7 @@ export default function Footer() {
               🎮 Kaede Portfolio
             </Link>
             <p className="mt-4 text-gray-400 text-sm">
-              ゲームプログラマーのポートフォリオサイト。
+              LotusLoverのポートフォリオサイト。
               Unity、C++、WebGL を使用したゲーム開発プロジェクトを紹介しています。
             </p>
           </div>

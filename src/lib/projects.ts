@@ -70,7 +70,7 @@ export const PROJECTS: Project[] = [
     title: 'オンライン RTS',
     titleEn: 'PieceCrash! Online RTS',
     shortDescription: 'WW2 をモチーフとしたオンラインリアルタイムストラテジーゲーム',
-    thumbnail: '/images/projects/rts-screenshot.png',
+    thumbnail: '/images/projects/Sumbnail_RTS.png',
     technologies: [
       TECHNOLOGIES.unity,
       TECHNOLOGIES.webgl,
@@ -103,7 +103,7 @@ export const PROJECTS: Project[] = [
     ],
     lessonsLearned: 'ネットワーク同期の複雑さと、それに対する様々なアプローチを学習中',
     gameEmbedUrl: '/games/rts/index.html',
-    screenshots: [],
+    screenshots: ['/images/projects/Sumbnail_RTS.png'],
     githubUrl: '',
   },
   {
@@ -111,7 +111,7 @@ export const PROJECTS: Project[] = [
     title: '感情操作アクション',
     titleEn: 'Emotion-Controlled Action',
     shortDescription: '表情・声色から推測した感情でキャラクターを操作して戦うアクションゲーム',
-    thumbnail: '/images/projects/action-screenshot.png',
+    thumbnail: '/images/projects/Sumbnail_3DAction.png',
     technologies: [
       TECHNOLOGIES.unity,
       TECHNOLOGIES.csharp,
@@ -146,7 +146,7 @@ export const PROJECTS: Project[] = [
     ],
     lessonsLearned: '異なる技術スタック（Python・C++・C#）の統合と、リアルタイム処理の難しさを実感',
     youtubeVideoId: 'VnsfBGetYkU', // YouTube アップロード後に設定
-    screenshots: [],
+    screenshots: ['/images/projects/Sumbnail_3DAction.png'],
     githubUrl: '',
   },
   {
@@ -195,7 +195,7 @@ export const PROJECTS: Project[] = [
     title: '高精度円周率計算プログラム',
     titleEn: 'High-Precision Pi Calculator',
     shortDescription: '授業課題を拡張し、Cで独自の多倍長整数演算とOpenMP並列化を実装して4000桁以上を計算',
-    thumbnail: '/images/projects/pi-screenshot.svg',
+    thumbnail: '/images/projects/Thumbnail_Py.png',
     technologies: [
       TECHNOLOGIES.c,
       TECHNOLOGIES.openmp,
@@ -206,6 +206,7 @@ export const PROJECTS: Project[] = [
     fullDescription: `
       高専の授業課題（Adamchik-Wagon公式で円周率1000桁）を拡張し、C言語で多倍長整数演算ライブラリを自作して
       4000桁以上のπを計算しました。OpenMPによる並列化を行い、性能改善にも取り組みました。
+      あえてFFTやGPUを使わない実装に挑戦しました。
     `,
     developmentBackground: `
       授業の指定は「1変数1桁の実装」でしたが、効率と拡張性を求めて32ビット単位の多倍長表現と基数変換を実装しました。
@@ -225,7 +226,7 @@ export const PROJECTS: Project[] = [
     ],
     lessonsLearned: 'FFTなしの限界を体感し、高精度計算には高速乗算アルゴリズムの重要性を理解しました。',
     youtubeVideoId: '', // 後でデモ動画をアップロードして設定
-    screenshots: ['/images/projects/pi-screenshot.svg'],
+    screenshots: ['/images/projects/Thumbnail_Py.png'],
     githubUrl: 'https://github.com/LotusLover/algo_py',
   },
 ];
@@ -243,7 +244,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
 // サイト情報
 export const SITE_CONFIG = {
   title: 'Kaede Shirazome Portfolio',
-  description: 'ゲームプログラマーのポートフォリオサイト',
+  description: 'ポートフォリオサイト',
   author: 'Kaede Shirazome',
   url: 'https://kaede-shirazome-portal.vercel.app', // Vercel デプロイ後に更新
 };
