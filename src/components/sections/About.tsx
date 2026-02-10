@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function About() {
   return (
     <section id="about" className="py-20 bg-gray-900">
@@ -6,17 +8,14 @@ export default function About() {
           {/* プロフィール画像エリア */}
           <div className="relative">
             <div className="aspect-square max-w-md mx-auto bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl overflow-hidden border border-gray-700">
-              {/* プレースホルダー画像 */}
-              <div className="w-full h-full flex items-center justify-center text-gray-600">
-                <svg className="w-32 h-32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1}
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                  />
-                </svg>
-              </div>
+              {/* プロフィール画像 */}
+              <Image
+                src="/images/projects/Kaede_S_icon.png"
+                alt="Kaede Shirazome Profile"
+                width={500}
+                height={500}
+                className="w-full h-full object-cover"
+              />
             </div>
             {/* デコレーション */}
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-purple-500/30 rounded-full blur-2xl"></div>
