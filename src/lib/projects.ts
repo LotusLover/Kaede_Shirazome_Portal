@@ -108,9 +108,9 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'action',
-    title: '感情操作アクション',
-    titleEn: 'Emotion-Controlled Action',
-    shortDescription: '表情・声色から推測した感情でキャラクターを操作して戦うアクションゲーム',
+    title: 'ActionTri：身体入力と街取り',
+    titleEn: 'ActionTri: Physical Input and Urban Territory Play',
+    shortDescription: '身体の動き・手・声を操作につなぎ、都市の中で陣地を競うゲームの試作',
     thumbnail: '/images/projects/Sumbnail_3DAction.png',
     technologies: [
       TECHNOLOGIES.unity,
@@ -123,17 +123,17 @@ export const PROJECTS: Project[] = [
     status: 'in-progress',
     type: 'video',
     fullDescription: `
-      プレイヤーの顔の表情や声色をリアルタイムで解析し、推測された感情に応じて
-      キャラクターの動きや攻撃が変化するアクションゲームです。
-      研究プロジェクトとして開発中。
-      AIがさらに進化する未来も見据え、製作に積極的にAIを用いて効率化をどのように進めるかも同時に研究しています。
+      身体の動き・手・声などを操作につなぐ研究開発です。現在は都市モデルの中で
+      移動・攻撃・塗りを組み合わせる街の陣取りを試作しています。
+      紹介資料と実機の試遊は分けて準備し、身体入力・別PC・人の試遊を個別に確認します。
+      下の既存画像と映像は以前の感情操作版の紹介で、現在の街取り版の実演ではありません。
     `,
     developmentBackground: `
       マルチモーダル入力（画像・音声）を活用したゲーム操作システムの研究として開発。
       感情認識技術とゲームプレイの融合による新しいゲーム体験の創出を目指しています。
     `,
     teamSize: '2人（研究開発） もう一人は音声感情認識モデル担当 自分はそれ以外のすべて',
-    developmentPeriod: '開発中（操作システム調整中）',
+    developmentPeriod: '試作・試遊条件の確認中',
     challenges: [
       '感情認識の精度向上',
       'Python/C++ と Unity の連携',
